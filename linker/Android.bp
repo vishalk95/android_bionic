@@ -208,7 +208,8 @@ cc_defaults {
         },
     },
 
-    cppflags: ["-Wold-style-cast"],
+    cppflags: ["-Wold-style-cast",
+               "-DUSE_LD_CONFIG_FILE"],
 
     // we are going to link libc++_static manually because
     // when stl is not set to "none" build system adds libdl
